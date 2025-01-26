@@ -1,6 +1,6 @@
 # Portif-lio
 
-Bem-vindo ao meu portfólio, Sinta-se à vontade para explorar e contribuir!
+Bem-vindo ao meu Portfólio, Sinta-se à vontade para explorar e contribuir!
 
 Principais Projetos
 
