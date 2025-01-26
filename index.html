@@ -1,28 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Meu Portifólio</title>
 </head>
 <body>
-    <main>
-    <h1>Seja Bem Vindo ao Meu Portifólio</h1>
-    <p>Meu nome é Kayque e sou Desenvolvedor Front End, </p>
-    <div class="texto">E Transformo ideias em interfaces interativas e intuitivas</div>
-    <div class="final">com toda qualidade e produtividade.</div>
-    <img src="./imagens/imagem.png (2).png"></img>
-    <div class="but">
-    <a href="projeto.html"><button class="button">Projetos</button>
-</div>
-        <a href="https://github.com/Kayquess">
-        <img src="./imagens/github.png.png" class="github"></img>
-    </a>
-        <a href="https://www.linkedin.com/in/kayque-pereira-da-silva-dev/">
-        <img src="./imagens/linkedin.png (2).png" class="linkedin"></img>
-    </a>
-    </main>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<script src="main.js"></script>
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>"Meu nome é Kayque, sou desenvolvedor Front End Júnior, altamente motivado por transformar ideias em experiências digitais excepcionais. Minha jornada profissional gira em torno das tecnologias que impulsionam a web moderna, com especialização em React, JavaScript, TypeScript e Git. Com uma abordagem orientada para resultados e um compromisso com a excelência, estou em busca de desafios que me permitam criar soluções inovadoras e impactantes."</p>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-grid">
+     
+                <div class="projeto">
+                    <img src="/imagens/Fokus.png.png" alt="Projeto 1">
+                    <h3>Fokus</h3>
+                    <p>Esse projeto é um Temporizador de descanso, que vai ter um tempo para você descansar e ouvir uma música calma e relaxante. Tecnologias (HTML, CSS E Javascript)</p>
+                    <a href="https://fokus-snowy-rho.vercel.app/" target="_blank">Ver Projeto</a>
+                </div>
+
+   
+                <div class="projeto">
+                    <img src="/imagens/pacientes.png.png" alt="Projeto 2">
+                    <h3>Gerenciamento de Pacientes</h3>
+                    <p>Um sistema de gerenciamento de pacientes que integra registros do paciente. Tecnologias (HTML, CSS E Javascript)</p>
+                    <a href="https://gerenciamento-de-pacientes.vercel.app/" target="_blank">Ver Projeto</a>
+                </div>
+
+        
+                <div class="projeto">
+                    <img src="/imagens/Robotron.png.png" alt="Projeto 3">
+                    <h3>Robotron 2000</h3>
+                    <p>Esse projeto é o Robotron 2000 para calcular sua força, energia e velocidade. Tecnologias (HTML, CSS E Javascript)</p>
+                    <a href="https://robotron-delta-two.vercel.app/" target="_blank">Ver Projeto</a>
+                </div>
+
+         
+                <div class="projeto">
+                    <img src="/imagens/alura-midi.png" alt="Projeto 4">
+                    <h3>Alura Midi</h3>
+                    <p>Em Breve.</p>
+                    <a href="#" target="_blank">Ver Projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+                <form id="form-contato" action="https://formsubmit.co/pkayque09@gmail.com" method="POST">
+                <input type="text" placeholder="Seu nome" id="nome" required>
+                <input type="email" placeholder="Seu e-mail" id="email" required>
+                <textarea placeholder="Sua mensagem" id="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="contato-icones">
+                <div class="icone">
+                    <a href="https://github.com/Kayquess" target="_blank">
+                        <img src="/imagens/github.png.png" alt="GitHub" />
+                    </a>
+                </div>
+                <div class="icone">
+                    <a href="https://www.linkedin.com/in/kayque-pereira-da-silva-dev" target="_blank">
+                        <img src="/imagens/linkedin.png (2).png" alt="LinkedIn" />
+                    </a>
+                </div>
+            </div>
+            <div class="contato-info">
+                <p><strong>Email:</strong> pkayque09@gmail.com</p>
+                <p><strong>Telefone:</strong> (034) 99939-2849</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+</html>
