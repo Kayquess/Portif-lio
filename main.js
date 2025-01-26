@@ -1,54 +1,17 @@
-function typeWriter(e) {
-  const textoArray = e.innerHTML.split('')
-  e.innerHTML = ''
-  textoArray.forEach((letra, i) => {
-         setTimeout(() => e.innerHTML += letra, 75 * i)});
-}
-const texto = document.querySelector('h1')
-typeWriter(texto)
+    document.getElementById("form-contato").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const mensagem = document.getElementById("mensagem").value;
 
-function typeWriter(e) {
-  const textoArray = e.innerHTML.split('')
-  e.innerHTML = ''
-  textoArray.forEach((letra, i) => {
-         setTimeout(() => e.innerHTML += letra, 75 * i)});
-}
-const test = document.querySelector('p')
-typeWriter(test)
-
-function typeWriter(e) {
-  const textoArray = e.innerHTML.split('')
-  e.innerHTML = ''
-  textoArray.forEach((letra, i) => {
-         setTimeout(() => e.innerHTML += letra, 75 * i)});
-}
-const meio = document.querySelector('.texto')
-typeWriter(meio)
-
-function typeWriter(e) {
-  const textoArray = e.innerHTML.split('')
-  e.innerHTML = ''
-  textoArray.forEach((letra, i) => {
-         setTimeout(() => e.innerHTML += letra, 75 * i)});
-}
-const final = document.querySelector('.final')
-typeWriter(final)
-
-function typeWriter(e) {
-  const textoArray = e.innerHTML.split('')
-  e.innerHTML = ''
-  textoArray.forEach((letra, i) => {
-         setTimeout(() => e.innerHTML += letra, 75 * i)});
-}
-const projeto = document.querySelector('.nome')
-typeWriter(projeto)
-
-function typeWriter(e) {
-  const textoArray = e.innerHTML.split('')
-  e.innerHTML = ''
-  textoArray.forEach((letra, i) => {
-         setTimeout(() => e.innerHTML += letra, 75 * i)});
-}
-const prime = document.querySelector('.primeiro')
-typeWriter(prime)
+  
+    if (nome && email && mensagem) {
+    
+      alert("Mensagem enviada com sucesso!");
+      document.getElementById("form-contato").reset(); // Limpa os campos do formulário
+    } else {
+    
+      alert("Por favor, preencha todos os campos.");
+    }
+  });
 
