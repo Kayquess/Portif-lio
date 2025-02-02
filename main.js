@@ -1,17 +1,16 @@
-    document.getElementById("form-contato").addEventListener("submit", function(event) {
-    event.preventDefault(); 
-    const nome = document.getElementById("nome").value;
-    const email = document.getElementById("email").value;
-    const mensagem = document.getElementById("mensagem").value;
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleMenu = document.getElementById("toggleMenu");
+    const closeMenu = document.getElementById("closeMenu");
+    const menu = document.getElementById("menu");
 
-  
-    if (nome && email && mensagem) {
-    
-      alert("Mensagem enviada com sucesso!");
-      document.getElementById("form-contato").reset(); // Limpa os campos do formulário
-    } else {
-    
-      alert("Por favor, preencha todos os campos.");
+    if (toggleMenu && closeMenu && menu) {
+       
+        toggleMenu.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
+
+        closeMenu.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
     }
-  });
-
+});
